@@ -1,0 +1,17 @@
+service: shop-angular-cloudfront
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+plugins:
+  - serverless-finch
+
+custom:
+  client:
+    bucketName: shop-angular-cloudfront-sbk
+    distributionFolder: dist/app
+    indexDocument: index.html
+    manageResources: false
