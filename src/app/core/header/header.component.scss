@@ -1,9 +1,15 @@
+@import "../../../styles.scss";
+
 a.mat-menu-item {
   text-decoration: none;
   color: black;
 }
 
 .home-link {
-  color: white;
+  color: rgb(225, 30, 151);
   text-decoration: none;
+}
+
+.header {
+  background-color: $gray-800;
 }
